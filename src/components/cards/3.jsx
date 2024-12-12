@@ -27,9 +27,7 @@ const UseExistingToolsPage = () => {
 
       {/* Description */}
       <p className="text-center max-w-lg text-gray-400 mb-6">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi illo
-        officia atque iure voluptatibus necessitatibus odit cupiditate
-        reprehenderit iusto quaerat!
+       In-app notifications provide users with real-time updates and alerts within the application, enhancing user engagement and experience.
       </p>
     </div>
   );
