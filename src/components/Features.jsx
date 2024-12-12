@@ -6,7 +6,7 @@ import Access from "./cards/4";
 
 const Features = () => {
   return (
-<div className="relative min-h-screen max-w-full h-[60vh]">
+<div className="relative min-h-screen max-w-full">
         {/* Sticky Section - Card */}
         <div className="sticky top-20">
           <Card />
