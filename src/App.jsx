@@ -4,7 +4,6 @@ import LampDemo from './components/LampDemo';
 import BackgroundBeamsWithCollisionDemo from './components/Beam';
 import HeroScrollDemo from './components/Home';
 import FloatingNavDemo from './components/Navbar';
-import Contact from './components/Contact';
 
 function App() {
   return (
@@ -29,10 +28,6 @@ function App() {
       <div id="beam">
       <BackgroundBeamsWithCollisionDemo />
       </div>
-        <div>
-        <Contact/> 
-      </div>
-            
 
     </div>
   );
