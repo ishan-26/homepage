@@ -51,22 +51,20 @@ export function HeroScrollDemo() {
             <li>📕 OS OBA</li>
             <li>📢 DS Seminar</li>
           </ul>
-          <div
-            className="mt-6 md:mt-6 mobile:-translate-y-[10%]"
-          >
+          <div className="mt-6">
             <h4 className="font-semibold text-white mb-4 text-center">
-              {`${currentMonth} ${currentYear}`}
+              {${currentMonth} ${currentYear}}
             </h4>
             {/* Centered the month heading */}
             <div className="grid grid-cols-7 gap-2">
               {[...Array(31).keys()].map((day) => (
                 <motion.button
                   key={day}
-                  className={`py-2 rounded-md ${
+                  className={py-2 rounded-md ${
                     day + 1 === currentDate
                       ? "bg-blue-500 text-white"
                       : "bg-gray-700 hover:bg-gray-600"
-                  }`}
+                  }}
                   whileHover={{ scale: 1.1 }}
                 >
                   {day + 1}
@@ -79,3 +77,5 @@ export function HeroScrollDemo() {
     </div>
   );
 }
+
+export default HeroScrollDemo;
