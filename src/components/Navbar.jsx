@@ -12,13 +12,19 @@ export function FloatingNavDemo() {
     {
       name: "Features",
       link: "#lamp",
-      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <IconBrandSlack className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
-      name: "Contact",
+      name: "Try",
       link: "#beam", // Set this to the correct route
       icon: (
-        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+        <IconCalendar className="h-4 w-4 text-neutral-500 dark:text-white" />
+      ),
+      {
+      name: "Contact",
+      link: "#contact", // Set this to the correct route
+      icon: (
+        <IconCalendar className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),
     },
   ];
