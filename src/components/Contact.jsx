@@ -56,56 +56,61 @@ const Contact = () => {
       );
   };
 
-  return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-900 px-4">
-      <form
-        ref={formRef}
-        onSubmit={handleSubmit}
-        className="w-full max-w-lg bg-gray-800 p-6 rounded-lg shadow-lg"
+ return (
+  <div className="flex flex-col justify-center items-center min-h-screen bg-gray-900 px-4">
+    {/* Get in touch heading */}
+    <h2 className="text-white text-2xl font-bold mb-6">
+      Get in touch
+    </h2>
+
+    <form
+      ref={formRef}
+      onSubmit={handleSubmit}
+      className="w-full max-w-lg bg-gray-800 p-6 rounded-lg shadow-lg"
+    >
+      <label className="flex flex-col mb-4">
+        <span className="text-white font-medium mb-2">Your Name</span>
+        <input
+          type="text"
+          name="name"
+          value={form.name}
+          onChange={handleChange}
+          placeholder="Enter your name"
+          className="bg-gray-700 py-3 px-4 placeholder-gray-400 text-white rounded-lg outline-none border-none"
+        />
+      </label>
+      <label className="flex flex-col mb-4">
+        <span className="text-white font-medium mb-2">Your Email</span>
+        <input
+          type="email"
+          name="email"
+          value={form.email}
+          onChange={handleChange}
+          placeholder="Enter your email"
+          className="bg-gray-700 py-3 px-4 placeholder-gray-400 text-white rounded-lg outline-none border-none"
+        />
+      </label>
+      <label className="flex flex-col mb-4">
+        <span className="text-white font-medium mb-2">Your Message</span>
+        <textarea
+          rows={5}
+          name="message"
+          value={form.message}
+          onChange={handleChange}
+          placeholder="Write your message here"
+          className="bg-gray-700 py-3 px-4 placeholder-gray-400 text-white rounded-lg outline-none border-none"
+        />
+      </label>
+      <button
+        type="submit"
+        className="w-full bg-blue-600 py-3 px-4 rounded-lg text-white font-bold
+        transition-transform duration-200 transform hover:bg-blue-700 hover:scale-105"
       >
-        <label className="flex flex-col mb-4">
-          <span className="text-white font-medium mb-2">Your Name</span>
-          <input
-            type="text"
-            name="name"
-            value={form.name}
-            onChange={handleChange}
-            placeholder="Enter your name"
-            className="bg-gray-700 py-3 px-4 placeholder-gray-400 text-white rounded-lg outline-none border-none"
-          />
-        </label>
-        <label className="flex flex-col mb-4">
-          <span className="text-white font-medium mb-2">Your Email</span>
-          <input
-            type="email"
-            name="email"
-            value={form.email}
-            onChange={handleChange}
-            placeholder="Enter your email"
-            className="bg-gray-700 py-3 px-4 placeholder-gray-400 text-white rounded-lg outline-none border-none"
-          />
-        </label>
-        <label className="flex flex-col mb-4">
-          <span className="text-white font-medium mb-2">Your Message</span>
-          <textarea
-            rows={5}
-            name="message"
-            value={form.message}
-            onChange={handleChange}
-            placeholder="Write your message here"
-            className="bg-gray-700 py-3 px-4 placeholder-gray-400 text-white rounded-lg outline-none border-none"
-          />
-        </label>
-        <button
-          type="submit"
-          className="w-full bg-blue-600 py-3 px-4 rounded-lg text-white font-bold
-          transition-transform duration-200 transform hover:bg-blue-700 hover:scale-105"
-        >
-          {loading ? "Sending..." : "Send"}
-        </button>
-      </form>
-    </div>
-  );
+        {loading ? "Sending..." : "Send"}
+      </button>
+    </form>
+  </div>
+);
 };
 
 export default Contact;
