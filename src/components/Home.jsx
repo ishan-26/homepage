@@ -28,7 +28,7 @@ export function HeroScrollDemo() {
         }
       >
         <motion.div
-          className="mt-10 md:mt-0 w-full bg-gray-900 shadow-lg rounded-lg p-8 relative"
+          className="mt-10 md:mt-0 w-full h-full bg-gray-900 shadow-lg rounded-lg p-8 relative"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
