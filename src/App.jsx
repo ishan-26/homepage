@@ -29,9 +29,9 @@ function App() {
       <div id="beam">
       <BackgroundBeamsWithCollisionDemo />
       </div>
-
+        <div>
         <Contact/> 
-      
+      </div>
             
 
     </div>
