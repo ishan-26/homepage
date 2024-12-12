@@ -5,7 +5,6 @@ import BackgroundBeamsWithCollisionDemo from './components/Beam';
 import HeroScrollDemo from './components/Home';
 import FloatingNavDemo from './components/Navbar';
 import Contact from './components/Contact';
-import styles from './components/styles'
 
 function App() {
   return (
@@ -32,8 +31,8 @@ function App() {
       </div>
 
       <div classname="flex flex-col justify-center items-start text-white max-w-5xl mx-auto"> 
-         <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+         <p className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">Get in touch</p>
+        <h3 className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">Contact.</h3>
         <Contact/> 
       </div>
             
