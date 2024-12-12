@@ -7,7 +7,7 @@ export function BackgroundBeamsWithCollisionDemo() {
     <BackgroundBeamsWithCollision>
       <div  className="flex flex-col items-center justify-center h-screen text-center overflow-hidden">
         {/* Heading */}
-        <h2 className="text-2xl relative z-20 md:text-4xl lg:text-7xl font-bold text-center text-black dark:text-white font-sans tracking-tight">
+        <h2 className="text-2xl relative z-20 md:text-4xl lg:text-7xl font-bold text-center text-white dark:text-black font-sans tracking-tight">
             What&apos;s cooler than{" "}
               <img src={googleIcon} alt="Google" className="inline-block" />{" "}
               Calendar?{" "}
