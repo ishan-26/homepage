@@ -12,8 +12,7 @@ function DataPrivacyPage() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-[#C8F0C8] text-[#7a6f00] px-4">
-      {/* Icon */}
+<div className="flex flex-col items-center justify-center min-h-screen bg-[#C8F0C8] text-[#7a6f00] px-4" style={{ backgroundColor: '#C8F0C8', color: '#7a6f00' }}>      {/* Icon */}
       <div className="mb-6">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 64" width="144" height="64" fill="none">
           <g transform="translate(0, 0)">
@@ -56,24 +55,6 @@ function DataPrivacyPage() {
         reprehenderit iusto quaerat!
       </p>
 
-      {/* Button */}
-      <button className="px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 transition flex items-center">
-        LEARN MORE
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5 ml-2"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={2}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M17 8l4 4m0 0l-4 4m4-4H3"
-          />
-        </svg>
-      </button>
     </div>
   );
 }
