@@ -61,7 +61,7 @@ const Contact = () => {
 
   return (
     <div className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden">
-      <div className="flex flex-col justify-center items-start">
+      <div className="flex flex-col justify-center items-start max-w-5xl mx-auto">
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
       </div>
@@ -69,7 +69,7 @@ const Contact = () => {
       <form
         ref={formRef}
         onSubmit={handleSubmit}
-        className="mt-12 flex flex-col gap-8 bg-gray-800 p-8 rounded-lg flex-grow"
+        className="mt-12 flex flex-col gap-8 bg-gray-800 p-8 rounded-lg max-w-3xl mx-auto"
       >
         <label className="flex flex-col">
           <span className="text-white font-medium mb-4">Your Name</span>
