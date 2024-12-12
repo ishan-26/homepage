@@ -43,9 +43,7 @@ const Card = () => {
 
       {/* Description */}
       <p className="text-center max-w-lg text-gray-400 mb-6">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi illo
-        officia atque iure voluptatibus necessitatibus odit cupiditate
-        reprehenderit iusto quaerat!
+        A personalized calendar for each class provides students with a customized schedule, displaying important dates, events, and deadlines specific to their courses.
       </p>
       
     </div>
