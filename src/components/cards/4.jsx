@@ -1,23 +1,45 @@
-import React from "react";
+import React from 'react';
 
-const Access = () => {
+// Calendar Icon Component
+const CalendarIcon = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-[#FFB3BA] text-[#396c58] px-4">
-      {/* Icon */}
-      <div className="mb-0">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="h-10 w-10 text-gray-400"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={2}
+    >
+      <rect
+        x="3"
+        y="8"
+        width="18"
+        height="13"
+        rx="2"
+        ry="2"
+        className="stroke-current"
+      />
+      <line x1="16" y1="2" x2="16" y2="6" className="stroke-current" />
+      <line x1="8" y1="2" x2="8" y2="6" className="stroke-current" />
+      <line x1="3" y1="10" x2="21" y2="10" className="stroke-current" />
+    </svg>
+  );
+};
 
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" fill="none" stroke="white" stroke-width="2">
-
-  <rect x="25" y="35" width="50" height="50" rx="8" ry="8" stroke="white" stroke-width="2"/>
-  <line x1="50" y1="35" x2="50" y2="20" stroke="white" stroke-width="2"/>
-  <circle cx="50" cy="20" r="8" stroke="white" stroke-width="2" fill="none"/>
-  <path d="M45 62 L55 62" stroke="white" stroke-width="2"/>
-  <circle cx="50" cy="70" r="8" stroke="white" stroke-width="2" fill="none"/>
-</svg>
+// Main Component
+const Card = () => {
+  return (
+    <div className="flex flex-col items-center justify-center min-h-[75vh] bg-[#FFB3BA] text-[#396c58] px-4">
+      {/* Calendar Icon */}
+      <div className="mb-6">
+        <CalendarIcon />
       </div>
 
       {/* Title */}
-      <h1 className="text-4xl font-bold mb-4 text-center">Access Control</h1>
+      <h1 className="text-4xl font-bold mb-4 text-center">
+        Personalized calendar for each class
+      </h1>
 
       {/* Description */}
       <p className="text-center max-w-lg text-gray-400 mb-6">
@@ -27,7 +49,7 @@ const Access = () => {
       </p>
 
       {/* Button */}
-      <button className="px-6 py-3 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition flex items-center">
+      <button className="px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 transition flex items-center">
         LEARN MORE
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -48,4 +70,4 @@ const Access = () => {
   );
 };
 
-export default Access;
+export default Card;
