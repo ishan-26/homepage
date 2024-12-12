@@ -42,7 +42,6 @@ const Contact = () => {
         () => {
           setLoading(false);
           alert("Thank you. I will get back to you as soon as possible.");
-
           setForm({
             name: "",
             email: "",
@@ -52,57 +51,55 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           console.error(error);
-
           alert("Ahh, something went wrong. Please try again.");
         }
       );
   };
 
   return (
-    <div className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden">
-
+    <div className="flex justify-center items-center min-h-screen bg-gray-900 px-4">
       <form
         ref={formRef}
         onSubmit={handleSubmit}
-        className="mt-12 flex flex-col gap-8 bg-gray-800 p-8 rounded-lg max-w-3xl mx-auto"
+        className="w-full max-w-lg bg-gray-800 p-6 rounded-lg shadow-lg"
       >
-        <label className="flex flex-col">
-          <span className="text-white font-medium mb-4">Your Name</span>
+        <label className="flex flex-col mb-4">
+          <span className="text-white font-medium mb-2">Your Name</span>
           <input
             type="text"
             name="name"
             value={form.name}
             onChange={handleChange}
-            className="bg-gray-700 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+            placeholder="Enter your name"
+            className="bg-gray-700 py-3 px-4 placeholder-gray-400 text-white rounded-lg outline-none border-none"
           />
         </label>
-        <label className="flex flex-col">
-          <span className="text-white font-medium mb-4">Your email</span>
+        <label className="flex flex-col mb-4">
+          <span className="text-white font-medium mb-2">Your Email</span>
           <input
             type="email"
             name="email"
             value={form.email}
             onChange={handleChange}
-            className="bg-gray-700 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+            placeholder="Enter your email"
+            className="bg-gray-700 py-3 px-4 placeholder-gray-400 text-white rounded-lg outline-none border-none"
           />
         </label>
-        <label className="flex flex-col">
-          <span className="text-white font-medium mb-4">Your Message</span>
+        <label className="flex flex-col mb-4">
+          <span className="text-white font-medium mb-2">Your Message</span>
           <textarea
-            rows={7}
-            placeholder="What do you want to say?"
+            rows={5}
             name="message"
             value={form.message}
             onChange={handleChange}
-            className="bg-gray-700 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+            placeholder="Write your message here"
+            className="bg-gray-700 py-3 px-4 placeholder-gray-400 text-white rounded-lg outline-none border-none"
           />
         </label>
-
         <button
           type="submit"
-          className="bg-blue-600 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold
-          shadow-md shadow-primary transition duration-300 ease-in-out transform hover:bg-blue-700
-          hover:scale-105 hover:shadow-lg"
+          className="w-full bg-blue-600 py-3 px-4 rounded-lg text-white font-bold
+          transition-transform duration-200 transform hover:bg-blue-700 hover:scale-105"
         >
           {loading ? "Sending..." : "Send"}
         </button>
