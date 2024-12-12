@@ -1,6 +1,6 @@
 import React from "react";
 import { FloatingNav } from "../components/ui/floating-navbar";
-import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
+import { IconHome, IconMessage, IconUser } from "@tabler/icons-react"; // Add the missing icon import
 
 export function FloatingNavDemo() {
   const navItems = [
@@ -12,7 +12,7 @@ export function FloatingNavDemo() {
     {
       name: "Features",
       link: "#lamp",
-      icon: <IconBrandSlack className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <IconBrandSlack className="h-4 w-4 text-neutral-500 dark:text-white" />, // Ensure IconBrandSlack is imported if used
     },
     {
       name: "Try",
@@ -20,11 +20,12 @@ export function FloatingNavDemo() {
       icon: (
         <IconCalendar className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),
-      {
+    },
+    {
       name: "Contact",
       link: "#contact", // Set this to the correct route
       icon: (
-        <IconCalendar className="h-4 w-4 text-neutral-500 dark:text-white" />
+        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),
     },
   ];
