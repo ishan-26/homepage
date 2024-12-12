@@ -51,7 +51,9 @@ export function HeroScrollDemo() {
             <li>📕 OS OBA</li>
             <li>📢 DS Seminar</li>
           </ul>
-          <div className="mt-6">
+          <div
+            className="mt-6 md:mt-6 mobile:-translate-y-[10%]"
+          >
             <h4 className="font-semibold text-white mb-4 text-center">
               {`${currentMonth} ${currentYear}`}
             </h4>
@@ -77,5 +79,3 @@ export function HeroScrollDemo() {
     </div>
   );
 }
-
-export default HeroScrollDemo;
