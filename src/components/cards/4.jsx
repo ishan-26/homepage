@@ -3,27 +3,9 @@ import React from 'react';
 // Calendar Icon Component
 const CalendarIcon = () => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="h-10 w-10 text-gray-400"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      strokeWidth={2}
-    >
-      <rect
-        x="3"
-        y="8"
-        width="18"
-        height="13"
-        rx="2"
-        ry="2"
-        className="stroke-current"
-      />
-      <line x1="16" y1="2" x2="16" y2="6" className="stroke-current" />
-      <line x1="8" y1="2" x2="8" y2="6" className="stroke-current" />
-      <line x1="3" y1="10" x2="21" y2="10" className="stroke-current" />
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <path fill="white" d="M12 2C9.79 2 8 3.79 8 6V10H6V6C6 3.79 7.79 2 10 2C11.1 2 12 2.9 12 4C12 2.9 12.9 2 14 2C16.21 2 18 3.79 18 6V10H16V6C16 3.79 14.21 2 12 2ZM12 12C9.79 12 8 13.79 8 16V20H6V16C6 13.79 7.79 12 10 12H12C14.21 12 16 13.79 16 16V20H14V16C14 13.79 12.21 12 12 12Z"/>
+</svg>
   );
 };
 
@@ -38,14 +20,12 @@ const Card = () => {
 
       {/* Title */}
       <h1 className="text-4xl font-bold mb-4 text-center">
-        Personalized calendar for each class
+       Access Control
       </h1>
 
       {/* Description */}
       <p className="text-center max-w-lg text-gray-400 mb-6">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi illo
-        officia atque iure voluptatibus necessitatibus odit cupiditate
-        reprehenderit iusto quaerat!
+       Restricts access to edit or based on roles, permissions and authentication, ensuring that only authorized individuals can perform specific actions
       </p>
 
       {/* Button */}
