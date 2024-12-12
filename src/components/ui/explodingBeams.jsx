@@ -147,48 +147,42 @@ const CollisionMechanism = React.forwardRef(({ parentRef, containerRef, beamOpti
   }, [collision]);
 
   return (<>
-   <motion.div
-  key={beamKey}
-  ref={beamRef}
-  animate="animate"
-  initial={{
-    translateY: beamOptions.initialY || "-200px",
-    translateX: beamOptions.initialX || "0px",
-    rotate: beamOptions.rotate || 0,
-  }}
-  variants={{
-    animate: {
-      translateY: beamOptions.translateY || "1800px",
-      translateX: beamOptions.translateX || "0px",
-      rotate: beamOptions.rotate || 0,
-    },
-  }}
-  transition={{
-    duration: beamOptions.duration || 8,
-    repeat: Infinity,
-    repeatType: "loop",
-    ease: "linear",
-    delay: beamOptions.delay || 0,
-    repeatDelay: beamOptions.repeatDelay || 0,
-  }}
-  className={cn(
-    "absolute left-0 top-20 m-auto h-14 w-px rounded-full",
-    // Add conditional classes based on dark mode
-    "bg-gradient-to-t",
-    "from-indigo-500 via-purple-500 to-transparent", // Light mode default
-    "dark:from-gray-700 dark:via-purple-800 dark:to-black", // Dark mode styles
-    beamOptions.className
-  )}
-/>
-
+    <motion.div
+      key={beamKey}
+      ref={beamRef}
+      animate="animate"
+      initial={{
+        translateY: beamOptions.initialY || "-200px",
+        translateX: beamOptions.initialX || "0px",
+        rotate: beamOptions.rotate || 0,
+      }}
+      variants={{
+        animate: {
+          translateY: beamOptions.translateY || "1800px",
+          translateX: beamOptions.translateX || "0px",
+          rotate: beamOptions.rotate || 0,
+        },
+      }}
+      transition={{
+        duration: beamOptions.duration || 8,
+        repeat: Infinity,
+        repeatType: "loop",
+        ease: "linear",
+        delay: beamOptions.delay || 0,
+        repeatDelay: beamOptions.repeatDelay || 0,
+      }}
+      className={cn(
+        "absolute left-0 top-20 m-auto h-14 w-px rounded-full bg-gradient-to-t from-indigo-500 via-purple-500 to-transparent",
+        beamOptions.className
+      )} />
     <AnimatePresence>
       {collision.detected && collision.coordinates && (
         <Explosion
-          key={`${collision.coordinates.x}-${collision.coordinates.y}`}
+          key={${collision.coordinates.x}-${collision.coordinates.y}}
           className=""
           style={{
-            left: `${collision.coordinates.x}px`,
-            top: `${collision.coordinates.y}px`,
+            left: ${collision.coordinates.x}px,
+            top: ${collision.coordinates.y}px,
             transform: "translate(-50%, -50%)",
           }} />
       )}
