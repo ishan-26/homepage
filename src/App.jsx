@@ -29,6 +29,8 @@ function App() {
       <div id="beam">
       <BackgroundBeamsWithCollisionDemo />
       </div>
+            <Contact/>
+
     </div>
   );
 }
