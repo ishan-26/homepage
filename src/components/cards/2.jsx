@@ -50,9 +50,7 @@ function DataPrivacyPage() {
 
       {/* Description */}
       <p className="text-center max-w-lg text-gray-400 mb-6">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi illo
-        officia atque iure voluptatibus necessitatibus odit cupiditate
-        reprehenderit iusto quaerat!
+       Automated communication through email and Telegram, streamlining notifications, alerts and user interactions via both platforms.
       </p>
 
     </div>
