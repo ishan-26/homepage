@@ -3,9 +3,12 @@ import React from 'react';
 // Calendar Icon Component
 const CalendarIcon = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-  <path fill="white" d="M12 2C9.79 2 8 3.79 8 6V10H6V6C6 3.79 7.79 2 10 2C11.1 2 12 2.9 12 4C12 2.9 12.9 2 14 2C16.21 2 18 3.79 18 6V10H16V6C16 3.79 14.21 2 12 2ZM12 12C9.79 12 8 13.79 8 16V20H6V16C6 13.79 7.79 12 10 12H12C14.21 12 16 13.79 16 16V20H14V16C14 13.79 12.21 12 12 12Z"/>
-</svg>
+   <svg fill="#000000" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
+     <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> 
+       <g id="XMLID_504_"> <path id="XMLID_505_" d="M65,330h200c8.284,0,15-6.716,15-15V145c0-8.284-6.716-15-15-15h-15V85c0-46.869-38.131-85-85-85 S80,38.131,80,85v45H65c-8.284,0-15,6.716-15,15v170C50,323.284,56.716,330,65,330z M207.481,219.356l-42.5,42.5 c-2.929,2.929-6.768,4.394-10.606,4.394s-7.678-1.465-10.606-4.394l-21.25-21.25c-5.858-5.858-5.858-15.354,0-21.213 c5.857-5.858,15.355-5.858,21.213,0l10.644,10.643l31.894-31.893c5.857-5.858,15.355-5.858,21.213,0 C213.34,204.002,213.34,213.498,207.481,219.356z M110,85c0-30.327,24.673-55,55-55s55,24.673,55,55v45H110V85z"></path> 
+   </g> 
+   </g>
+   </svg>
   );
 };
 
