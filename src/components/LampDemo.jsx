@@ -14,9 +14,8 @@ export function LampDemo() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="mt-8 py-4 text-center text-4xl font-medium tracking-tight md:text-7xl
-        bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text 
-        text-transparent dark:text-white text-black dark:bg-gradient-to-br dark:from-indigo-600 dark:to-purple-600"
+        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight md:text-7xl
+        text-black dark:text-white"
       >
         Features
       </motion.h1>
