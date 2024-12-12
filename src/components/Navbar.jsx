@@ -12,16 +12,15 @@ export function FloatingNavDemo() {
     {
       name: "Features",
       link: "#lamp",
-      icon: <IconBrandSlack className="h-4 w-4 text-neutral-500 dark:text-white" />, // Ensure IconBrandSlack is imported if used
+      icon: <Iconlayers-intersect className="h-4 w-4 text-neutral-500 dark:text-white" />, // Ensure IconBrandSlack is imported if used
+    },
+       {
+      name: "Info",
+      link: "#beam",
+      icon: <IconBrand className="h-4 w-4 text-neutral-500 dark:text-white" />, // Ensure IconBrandSlack is imported if used
     },
   
-    {
-      name: "Contact",
-      link: "#contact", // Set this to the correct route
-      icon: (
-        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
-      ),
-    },
+   
   ];
 
   return (
