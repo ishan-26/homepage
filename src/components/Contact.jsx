@@ -61,10 +61,6 @@ const Contact = () => {
 
   return (
     <div className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden">
-      <div className="flex flex-col justify-center items-start max-w-5xl text-white mx-auto">
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
-      </div>
 
       <form
         ref={formRef}
