@@ -15,6 +15,7 @@ export function LampDemo() {
           ease: "easeInOut",
         }}
         className="mt-8 bg-gradient-to-br from-slate-100 to-slate-300 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+      >
         Features
       </motion.h1>
     </LampContainer>
