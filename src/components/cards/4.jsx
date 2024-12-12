@@ -27,25 +27,6 @@ const Card = () => {
       <p className="text-center max-w-lg text-gray-400 mb-6">
        Restricts access to edit or based on roles, permissions and authentication, ensuring that only authorized individuals can perform specific actions
       </p>
-
-      {/* Button */}
-      <button className="px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 transition flex items-center">
-        LEARN MORE
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5 ml-2"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={2}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M17 8l4 4m0 0l-4 4m4-4H3"
-          />
-        </svg>
-      </button>
     </div>
   );
 };
