@@ -1,6 +1,6 @@
 import React from "react";
 import { FloatingNav } from "../components/ui/floating-navbar";
-import { IconHome, IconMessage, IconUser } from "@tabler/icons-react"; // Add the missing icon import
+import { IconHome, IconBrandSlack, IconCalendar, IconMessage } from "@tabler/icons-react"; // Add the missing icon import
 
 export function FloatingNavDemo() {
   const navItems = [
