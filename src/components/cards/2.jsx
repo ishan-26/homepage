@@ -49,7 +49,7 @@ function DataPrivacyPage() {
       <h1 className="text-4xl font-bold mb-4 text-center">Email and Telegram Bot Integration</h1>
 
       {/* Description */}
-      <p className="text-center max-w-lg text-gray-400 mb-6">
+      <p className="text-center max-w-lg text-gray-900 mb-6">
        Automated communication through Email and Telegram, streamlining notifications, alerts and user interactions via both platforms.
       </p>
 
