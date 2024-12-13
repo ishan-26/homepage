@@ -29,7 +29,7 @@ const Card = () => {
       </h1>
 
       {/* Description */}
-      <p className="text-center max-w-lg text-gray-400 mb-6">
+      <p className="text-center max-w-lg text-gray-900 mb-6">
           Ensures only authorized individuals can perform specific actions.
       </p>
 
