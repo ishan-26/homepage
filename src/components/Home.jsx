@@ -18,7 +18,7 @@ export function HeroScrollDemo() {
        className="mt-20 md:mt-10"
         titleComponent={
           <>
-            <h1 className="text-4xl font-semibold text-white text-center md:mt-1">
+            <h1 className="text-4xl font-semibold text-white text-center">
               {/* Added text-center here */}
               One place for <br />
               <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none bg-gradient-to-r py-4 from-purple-500 via-violet-500 to-pink-500 text-transparent bg-clip-text [text-shadow:0_0_rgba(0,0,0,0.1)] ">
