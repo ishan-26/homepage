@@ -15,6 +15,7 @@ export function HeroScrollDemo() {
       <FloatingNavDemo />
 
       <ContainerScroll
+       className="mt-20 md:mt-10"
         titleComponent={
           <>
             <h1 className="text-4xl font-semibold text-white text-center">
