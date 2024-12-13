@@ -26,7 +26,7 @@ const UseExistingToolsPage = () => {
       <h1 className="text-4xl font-bold mb-4 text-center">In-App notification</h1>
 
       {/* Description */}
-      <p className="text-center max-w-lg text-gray-400 mb-6">
+      <p className="text-center max-w-lg text-gray-900 mb-6">
         In-app notifications provide users with real-time updates and alerts within the application, enhancing user engagement and experience.
       </p>
     </div>
