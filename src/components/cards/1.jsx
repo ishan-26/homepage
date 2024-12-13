@@ -42,7 +42,7 @@ const Card = () => {
       </h1>
 
       {/* Description */}
-      <p className="text-center max-w-lg text-gray-400 mb-6">
+      <p className="text-center max-w-lg text-gray-900 mb-6">
         A personalized calendar for each class provides students with a customized schedule, displaying important dates, events, and deadlines specific to their courses.
       </p>
       
