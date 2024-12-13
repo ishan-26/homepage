@@ -17,7 +17,7 @@ export function FloatingNavDemo() {
        {
       name: "Info",
       link: "#beam",
-      icon: <IconBrand className="h-4 w-4 text-neutral-500 dark:text-white" />, // Ensure IconBrandSlack is imported if used
+      icon: <IconBrandSlack className="h-4 w-4 text-neutral-500 dark:text-white" />, // Ensure IconBrandSlack is imported if used
     },
   
    
